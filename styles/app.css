@@ -1,14 +1,41 @@
-:root{
-  --main-font: 'Montserrat', sans-serif;
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --primary-color: #ffefeb;
+  --secondary-color: #fce2db;
+  --text-color: #432c7a;
+}
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--main-font);
 }
 
-
-h1{
-  font-family: var(--main-font);
-  font-weight: 700;
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 60px;
+    /* gradient-purple */
+  background: linear-gradient(90deg, #80489c 0%, #432c7a 51.32%, #432c7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-p{
+h2{
+  font-size: 23px;
+  color: #FF8FB1;
+  font-weight: bold;
+}
+
+p {
   font-family: var(--main-font);
-font-weight: 500;
+  font-weight: normal;
+}
+.hero {
+  background-color: var(--primary-color);
+  text-align: left;
+}
+.link-more {
+  color: #432c7a;
+  font-size: 16px;
+  font-weight: bold;
 }
