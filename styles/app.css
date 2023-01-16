@@ -2,13 +2,14 @@
   --main-font: "Montserrat", sans-serif;
   --primary-color: #ffefeb;
   --secondary-color: #fce2db;
-  --text-color: #432c7a;
+  --primary-text-color: #432c7a;
   --gradient-purple: linear-gradient(
     90deg,
     #80489c 0%,
     #432c7a 51.32%,
     #432c7a 100%
   );
+  --secondary-text-color: #ff8fb1;
 }
 body {
   background-color: var(--secondary-color);
@@ -28,7 +29,7 @@ h1 {
 
 h2 {
   font-size: 23px;
-  color: #ff8fb1;
+  color: var(--secondary-text-color);
   font-weight: bold;
 }
 a:hover {
@@ -41,14 +42,22 @@ p {
 .hero {
   background-color: var(--primary-color);
   text-align: left;
+  padding: 10px;
 }
 .hero-link-more {
   color: #432c7a;
   font-size: 16px;
   font-weight: bold;
+  padding-bottom: 10px;
+}
+.hero-link-more:hover, .social-links a:hover{
+  border-bottom: 3px solid var(--primary-text-color);
+}
+.hero-link-more img{
+  margin-left: 5px;
 }
 
-.cards .col{
+.cards .col {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
@@ -67,7 +76,7 @@ p {
 }
 
 .card-title {
-  color: var(--text-color);
+  color: var(--primary-text-color);
   font-weight: bold;
 }
 
@@ -80,18 +89,52 @@ p {
 }
 
 .card-link-gradient {
-  background-color: var(--text-color);
+  background-color: var(--primary-text-color);
   border-radius: 10px;
   color: #fff;
   width: 57px;
   height: 45px;
   background: var(--gradient-purple);
 }
+.social-links {
+  background-color: var(--primary-color);
+  padding: 60px;
+}
+.social-links a {
+  color: var(--primary-text-color);
+  text-align: center;
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+.social-links h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.social-links p {
+  font-size: 14px;
+  line-height: 17px;
+}
+.social-links img {
+  width: 165px;
+  height: 130px;
+}
 
+.footer-info {
+  background: var(--gradient-purple);
+  padding: 20px;
+  color: var(--secondary-text-color);
+  align-items: center;
+}
+.footer-info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (max-width: 960px) {
   .hero {
     margin-top: 20px;
   }
- 
-  }
-
+.footer-info-content{
+  font-size: 14px;
+}
+}
