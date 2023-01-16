@@ -44,6 +44,9 @@ p {
   text-align: left;
   padding: 10px;
 }
+.hero-text{
+  padding: 20px
+}
 .hero-link-more {
   color: #432c7a;
   font-size: 16px;
@@ -134,7 +137,11 @@ p {
   .hero {
     margin-top: 20px;
   }
+ .hero-text{
+  text-align: center;
+ }
 .footer-info-content{
   font-size: 14px;
 }
+
 }
