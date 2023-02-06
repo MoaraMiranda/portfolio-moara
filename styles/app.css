@@ -192,15 +192,17 @@ nav li.selected a {
 .about-content img {
   border-radius: 10px;
   float: left;
-
 }
 .about-content p {
   text-align: justify;
 }
+.about-wrapper {
+  position: relative;
+}
 .about-illustration {
   position: absolute;
-  right: 200px;
-  top: 60px;
+  right: 100px;
+  bottom: -50px;
 }
 
 footer {
@@ -215,7 +217,7 @@ footer {
   .footer-info-content {
     font-size: 14px;
   }
-  .about-picture{
+  .about-picture {
     width: 100%;
   }
 }
@@ -230,7 +232,7 @@ footer {
     width: 100%;
     margin-bottom: 20px;
   }
-  .about-content{
+  .about-content {
     text-align: center;
   }
 }
