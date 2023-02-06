@@ -192,6 +192,9 @@ nav li.selected a {
 .about-content img {
   border-radius: 10px;
   float: left;
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+  background-color: var(--primary-color);
 }
 .about-content p {
   text-align: justify;
@@ -204,7 +207,19 @@ nav li.selected a {
   right: 100px;
   bottom: -50px;
 }
-
+.about-content a{
+  text-decoration: none;
+  color: #000;
+}
+.about-content a:hover{
+  cursor: pointer;
+  color: var(--tertiary-text-color);
+}
+.my-work-illustration{
+   position: absolute;
+   right: 100px;
+   bottom: -80px;
+}
 footer {
   display: flex;
   flex-grow: 1;
@@ -226,6 +241,11 @@ footer {
   nav {
     padding: 0 20px;
   }
+  .about-illustration, .my-work-illustration{
+    position: absolute;
+    right: 0;
+  }
+
 }
 @media (max-width: 980px) {
   .about-content img {
